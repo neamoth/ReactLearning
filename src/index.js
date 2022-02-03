@@ -1,13 +1,22 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
+setInterval(() => {
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App name="Neamoth" />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+  const index = 0;
+  const element = (
+    <h1 className='heading' tabIndex={index}>
+      <span className='time'>
+        Hello {new Date().toLocaleTimeString()}
+      </span>
+      <img src="" alt="" />
+    </h1>
+  );
+  ReactDOM.render(
+    element,
+    document.getElementById('root')
+  );
+}, 1000);
+
 
 reportWebVitals();
