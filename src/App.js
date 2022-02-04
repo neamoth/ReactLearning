@@ -1,9 +1,9 @@
-function App(props) {
+import Clock from "./components/Clock";
+
+function App() {
   return (
     <div className="App">
-      <h1 className="heading">
-        Hello {props.name}
-      </h1>
+      <Clock/>
     </div>
   );
 }
